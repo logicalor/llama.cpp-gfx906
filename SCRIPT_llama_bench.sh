@@ -24,12 +24,7 @@ export ROCR_VISIBLE_DEVICES=0
 export GGML_BACKEND_HIP=1
 export HCC_AMDGPU_TARGET=gfx906
 
-MODEL_PATH="/mnt/data/openai_gpt-oss-20b-MXFP4.gguf"
-#MODEL_PATH="/mnt/data/Qwen3-VL-30B-A3B-Thinking-Q4_1.gguf"
-#MODEL_PATH="/mnt/data/Qwen3-4B-Instruct-2507-Q4_0.gguf"
-#MODEL_PATH="/mnt/data/Qwen3-4B-Instruct-2507-Q4_1.gguf"
-#MODEL_PATH="/mnt/data/Qwen3-4B-Instruct-2507-Q8_0.gguf"
-#MODEL_PATH="/mnt/data/Qwen3-Next-80B-A3B-Instruct-Q2_K.gguf"
+MODEL_PATH="/path/..."
 
 
 LOG_FILE="bench_results.md"
@@ -44,6 +39,8 @@ BENCH_PARAMS=(
     --main-gpu 0           # Main GPU device ID
     --progress             # Show progress during benchmark
     -r 1                   # Number of repetitions
+    #-b 2048
+    #-ub 1800
     #-d 8192               # Context size 
 )
 

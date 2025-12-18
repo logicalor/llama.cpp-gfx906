@@ -264,3 +264,314 @@ llama-bench: benchmark 2/2: generation run 1/1
 | gpt-oss 20B MXFP4 MoE          |  11.27 GiB |    20.91 B | ROCm       |  99 |      12 |   q8_0 |  1 |           tg128 |        158.05 ± 0.00 |
 
 build: 3190c82fd (7387)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+main: error: failed to load model '/mnt/data/openai_gpt-oss-20b-MXFP4.gguf'
+| model                          |       size |     params | backend    | ngl | threads | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -----: | -: | --------------: | -------------------: |
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |   q8_0 |  1 |           pp512 |       1466.70 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |   q8_0 |  1 |           tg128 |         96.92 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |   q8_0 |  1 |           pp512 |       1525.46 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |   q8_0 |  1 |           tg128 |        108.94 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |   q8_0 |  1 |           pp512 |       1524.68 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |   q8_0 |  1 |           tg128 |        109.50 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |   q8_0 |  1 |          pp2048 |       1419.12 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |   q8_0 |  1 |           tg128 |        108.77 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1536 |   q8_0 |  1 |          pp2048 |       1765.96 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1536 |   q8_0 |  1 |           tg128 |        105.94 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1766.39 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        107.48 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp4096 |       1595.72 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        107.73 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1764.24 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        106.10 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1825.80 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        105.88 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1823.75 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        107.36 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1784.84 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        106.74 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1785.00 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        107.86 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1852.21 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        107.92 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1878.86 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        106.80 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1894.90 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        107.60 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1892.59 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        107.30 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1906.24 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        106.12 ± 0.00 |
+
+build: da609d4d8 (7493)
+ggml_cuda_init: GGML_CUDA_FORCE_MMQ:    no
+ggml_cuda_init: GGML_CUDA_FORCE_CUBLAS: no
+ggml_cuda_init: found 1 ROCm devices:
+  Device 0: AMD Instinct MI50/MI60, gfx906:sramecc+:xnack- (0x906), VMM: no, Wave Size: 64
+llama-bench: benchmark 1/2: starting
+llama-bench: benchmark 1/2: warmup prompt run
+llama-bench: benchmark 1/2: prompt run 1/1
+| model                          |       size |     params | backend    | ngl | threads | n_ubatch | type_k | fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | ------: | -------: | -----: | -: | --------------: | -------------------: |
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |          pp2048 |       1915.55 ± 0.00 |
+llama-bench: benchmark 2/2: starting
+llama-bench: benchmark 2/2: warmup generation run
+llama-bench: benchmark 2/2: generation run 1/1
+| qwen3vlmoe 30B.A3B Q4_1        |  17.87 GiB |    30.53 B | ROCm       |  99 |      12 |     1800 |   q8_0 |  1 |           tg128 |        107.46 ± 0.00 |
+
+build: da609d4d8 (7493)
