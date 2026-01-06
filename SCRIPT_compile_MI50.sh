@@ -33,8 +33,8 @@ export LD_LIBRARY_PATH=$ROCM_PATH/lib:$ROCM_PATH/lib64:$ROCM_PATH/llvm/lib:${LD_
 # Detect AMD GPU architectures
 if command -v amdgpu-arch &> /dev/null; then
     # Use amdgpu-arch if available
-    AMDGPU_ARCH=$(amdgpu-arch | head -n 1)
-    echo "Detected AMD GPU Architecture using amdgpu-arch: $AMDGPU_ARCH"
+    AMDGPU_ARCH=$(amdgpu-arch | sort -u | paste -sd ";" -)
+    echo "Detected AMD GPU Architecture(s) using amdgpu-arch: $AMDGPU_ARCH"
 
 elif command -v rocminfo &> /dev/null; then
     # Fallback to rocminfo if amdgpu-arch is not present
