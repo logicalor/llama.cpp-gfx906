@@ -30,11 +30,26 @@ export HIP_CLANG_PATH=$ROCM_PATH/llvm/bin
 export PATH=$ROCM_PATH/bin:$ROCM_PATH/llvm/bin:$PATH
 export LD_LIBRARY_PATH=$ROCM_PATH/lib:$ROCM_PATH/lib64:$ROCM_PATH/llvm/lib:${LD_LIBRARY_PATH:-}
 
+# Detect AMD GPU architectures
 if command -v amdgpu-arch &> /dev/null; then
+    # Use amdgpu-arch if available
     AMDGPU_ARCH=$(amdgpu-arch | head -n 1)
-    echo "Detected AMD GPU Architecture: $AMDGPU_ARCH"
+    echo "Detected AMD GPU Architecture using amdgpu-arch: $AMDGPU_ARCH"
+
+elif command -v rocminfo &> /dev/null; then
+    # Fallback to rocminfo if amdgpu-arch is not present
+    AMDGPU_ARCH=$(rocminfo | grep -E "Name:\s+gfx[0-9]{3,4}" | \
+                  awk '{gsub(/ /,"",$2); print $2}' | sort -u | paste -sd ";" -)
+    if [ -z "$AMDGPU_ARCH" ]; then
+        echo "Warning: No AMD GPU architectures detected via rocminfo. Defaulting to 'native'."
+        AMDGPU_ARCH="native"
+    else
+        echo "Detected AMD GPU Architectures using rocminfo: $AMDGPU_ARCH"
+    fi
+
 else
-    echo "Warning: amdgpu-arch tool not found. Defaulting to 'native'."
+    # If neither tool is available, default to native
+    echo "Warning: Neither amdgpu-arch nor rocminfo found. Defaulting to 'native'."
     AMDGPU_ARCH="native"
 fi
 
